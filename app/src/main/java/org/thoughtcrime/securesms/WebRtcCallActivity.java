@@ -181,9 +181,7 @@ public class WebRtcCallActivity extends BaseActivity implements SafetyNumberChan
     super.onCreate(savedInstanceState);
 
     boolean isLandscapeEnabled = getResources().getConfiguration().smallestScreenWidthDp >= 480;
-    if (!isLandscapeEnabled) {
-      setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-    }
+      setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
     requestWindowFeature(Window.FEATURE_NO_TITLE);
     setContentView(R.layout.webrtc_call_activity);
@@ -1154,7 +1152,7 @@ public class WebRtcCallActivity extends BaseActivity implements SafetyNumberChan
 
       Optional<DisplayFeature> feature = windowLayoutInfo.getDisplayFeatures().stream().filter(f -> f instanceof FoldingFeature).findFirst();
       viewModel.setIsLandscapeEnabled(feature.isPresent());
-      setRequestedOrientation(feature.isPresent() ? ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+      setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
       if (feature.isPresent()) {
         FoldingFeature foldingFeature = (FoldingFeature) feature.get();
         Rect           bounds         = foldingFeature.getBounds();
