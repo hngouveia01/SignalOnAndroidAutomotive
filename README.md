@@ -1,3 +1,5 @@
+# Some constrains were changed on video calls UI to allow fullscreen calls for the bigger screens inside the car. ( No security measures were taken since it was just a PoC).
+
 # Signal Android 
 
 Signal is a simple, powerful, and secure messenger.
