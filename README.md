@@ -1,6 +1,4 @@
-# The phrase you provided is mostly grammatically correct. However, there are a few minor points that could be improved for clarity:
-
-Some constraints were changed on the video calls UI to allow fullscreen calls for the bigger screens inside the car. (No security measures were taken since it was just a PoC).
+# Some constraints were changed on the video calls UI to allow fullscreen calls for the bigger screens inside the car. (No security measures were taken since it was just a PoC).
 
 Here's what was adjusted:
 - "constrains" should be "constraints" as it refers to limitations or rules.
